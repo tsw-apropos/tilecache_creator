@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to TileCache Creator’s documentation! &mdash; TileCache Creator 0.5 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="TileCache Creator 0.5 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">TileCache Creator 0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-tilecache-creator-s-documentation">
+<h1>Welcome to TileCache Creator&#8217;s documentation!<a class="headerlink" href="#welcome-to-tilecache-creator-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>TileCache Creator is designed to create local tile caches for off line display of Web Map Service (WMS) base maps. When used together with the TileLayer Plugin by Minoru Akagi, you have fast offline use of WMS base maps.</p>
+<p>When using this plugin is it very important to make sure that the WMS service you want to use offline, permits you to make a local copy of the files. Examples of services that permit such use are:</p>
+<ul class="simple">
+<li>Open Street Map (irs.gis-lab.info)</li>
+<li>Canada NRCAN Toporama (wms.ess-ws.nrcan.gc.ca/wms/toporama_en)</li>
+</ul>
+<p>Like the TileLayer Plugin, right now TileCache Creator only supports Spherical Mercator projections (EPSG:3857) and creation of local tile caches from WMS services. Future support for WMTS and other projections may be added in the future.</p>
+</div>
+<div class="section" id="controls">
+<h2>Controls<a class="headerlink" href="#controls" title="Permalink to this headline">¶</a></h2>
+<p>This plugin has only one page, seen below:</p>
+<div class="figure align-left" id="fig-mainpage" style="width: 100%">
+<img alt="_images/screenshot.png" src="_images/screenshot.png" />
+</div>
+<p>Configuration files contain the information about the TileCache settings shown in this figure and they are named with a .tcc extension but are simple text files.</p>
+<p>The main fields and actions are:</p>
+<ul class="simple">
+<li>TileCache Dir Name - the directory where the tile cache will be created</li>
+<li>Source Name - the name of the source for these tiles</li>
+<li>Source URL - the url (without the <tt class="docutils literal"><span class="pre">http://</span></tt> prefix) of the WMS</li>
+<li>Service Layer - the layer from this service you want to use. Clicking on the tool button to the right will query the system for available layers you can choose from.</li>
+<li>Minimum Zoom - the furthest out you want to zoom (values &gt;= 0)</li>
+<li>Maximum Zoom - the furthest in you want to zoom (values &lt;= 21)</li>
+<li>Project Extents Layer - if you have a vector or raster layer you want to use to get project extents, you can select it here.</li>
+<li>Update from extents layer - update layer extents from the layer selected in the &#8220;Project Extents Layer&#8221; dropdown list. lease note you should transform your default CRS for your project to to EPSG:3857 before doing this.</li>
+<li>Update from canvans - update layer extents from the current views extents</li>
+<li>Tile Image Format - select the file format you want to save tiles in. JPG is generally the most space efficient of the options provided.</li>
+</ul>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>When you create a tile cache, the system will notify you both of zoom level progress and tile level progress. Clicking on cancel will cancel the process after the current zoom level tiles are processed.</p>
+<p>When TileCache Creator updates or creates a tile cache, it also creates an input file for the TileLayer plugin so that you can work the tile cache results without the need for further manual configuration.</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to TileCache Creator&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#controls">Controls</a></li>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">TileCache Creator 0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Apropos Information Systems Inc..
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
