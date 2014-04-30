@@ -34,7 +34,6 @@ def author():
     return "Apropos Information Systems Inc."
 def email():
     return "info@aproposinfosystems.com"
-def 
 
 def classFactory(iface):
     # load TileCacheCreator class from file TileCacheCreator
