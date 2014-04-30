@@ -26,7 +26,7 @@ email=tsw.web@gmail.com
 # tags are comma separated with spaces allowed
 tags=tile cache, wms
 
-homepage=http://aproposinfosystems/products/tilecache-creator
+homepage=http://aproposinfosystems.com/products/tilecache-creator
 tracker=http://github.com/tsw-apropos/tilecache_creator/issues
 repository=http://github.com/tsw-apropos/tilecache_creator
 icon=icon.png
